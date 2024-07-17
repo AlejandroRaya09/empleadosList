@@ -20,7 +20,7 @@ listEmpelados: Empleado[] = [
 ]
 radioButtonSeleccionado:string = 'Todos'
 
-obtenerTotalEmpelados():number{
+obtenerTotalEmpleados():number{
   return this.listEmpelados.length;
 }
 obtenerTotalFemeninos():number{
@@ -30,6 +30,8 @@ obtenerTotalMasculinos():number{
   return this.listEmpelados.filter(list => list.sexo == 'Masculino').length
 }
 
-
+empleadosRadioSelect(radioButtonSelect:string){
+this.radioButtonSeleccionado = radioButtonSelect;
+}
 
 }
